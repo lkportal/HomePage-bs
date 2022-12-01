@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap')
-
-  
-    
+$very-darkblue:hsl(240, 100%, 5%)
+$off-white:hsl(36, 100%, 99%)  
+$Dark-gray-ishblue: hsl(236, 13%, 42%)  
+$grayshi-blue: hsl(233, 8%, 79%)  
+$Soft-orange: hsl(35, 77%, 62%)
+$Soft-red: hsl(5, 85%, 63%)
+$size-font:15px   
+$yel:#ffff00    
 body
     font-family: 'Inter', sans-serif
     display: grid
-    
+    grid-template-rows: repeat(100px 50px 100px 20px)
+    margin: 100px
 
 .header-nav
     display: flex
@@ -23,7 +29,7 @@ body
     li
         list-style: none
         margin: 10px
-        font-size: 10px
+        font-size:$size-font
 
 .banner-initial
     display: flex
@@ -32,3 +38,57 @@ body
         width: 100%
         height: 50%
         margin-left: 50px
+//Conteudo main       
+
+.section-main
+    border: solid 1px $very-darkblue
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    .section-left-conteudo
+        display: flex
+        .part-foco-section
+            font-size: 25px
+            margin: 15px
+    .paragraph-right
+        font-size: $size-font
+        color: $Dark-gray-ishblue
+        margin: 25px
+
+    //blue layout
+.section-right
+    display: flex
+    flex-direction: column
+    border: solid 1px $very-darkblue
+    background-color: $very-darkblue
+    margin: 10px
+    
+    h2
+        color:$off-white
+        margin: $size-font
+    h1
+        margin: 15px
+        color: $Soft-orange
+    p
+        font-size: $size-font
+        color: $grayshi-blue
+        margin: $size-font
+
+//Img final page
+
+
+.conteiner-img-card
+    display: grid
+    grid-template-rows: repeat(1,1fr)   
+
+    .img-card-item
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .img-card
+            border: solid 1px red
+            margin: 10px
+            
+
+        
+
