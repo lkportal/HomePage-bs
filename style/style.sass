@@ -15,11 +15,10 @@ $yel:#ffff00
 
 
 body
-    font-family: 'Inter', sans-serif
+    font-family: 'Inter'
     display: grid
-    grid-template-rows: repeat(100px 50px 100px 20px)
-    margin: 100px
     background-color: $grayshi-blue
+    padding: 100px
 
 .conteiner-app
     background-color: $off-white
@@ -31,7 +30,7 @@ body
 //style to header menu    
 .header-top
     display: grid
-    grid-template-columns: repeat(2,1fr)
+    grid-template-columns: repeat(1,1fr)
     padding: 10px
     .header-lista-item 
         display: flex
@@ -52,7 +51,7 @@ body
         display: grid
         grid-template-rows: repeat(2,1fr)
     img
-        max-width: 100%
+        max-width: 451px
         min-width: 451px
 
     .content-text
@@ -84,8 +83,9 @@ body
     background-color: $very-darkblue
     min-width: 350px
     padding: 5px
-    max-width: 400px
+    
     margin-top: 23px
+    flex-wrap: wrap
     h1
         color: $Soft-orange
         margin: 15px
@@ -95,3 +95,32 @@ body
         text-align: center
         color: $off-white
         font-size:20px
+
+.conteiner-foot
+  display: grid
+  margin-top: 40px
+  grid-template-columns: repeat(6,1fr)
+ 
+  
+  .card-text
+    display: flex
+    flex-direction: column
+    margin-left: 10px
+    p
+        @extend %paragraph-style-global
+    h2
+        font-size: 15px
+        color: $very-darkblue    
+    h1
+        font-size: 20px
+        color: $grayshi-blue
+.img-card
+        display: flex
+        flex-direction: column
+       
+
+
+
+      
+    
+            

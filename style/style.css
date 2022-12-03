@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
-.conteiner-content-right p, .conteiner-content .content-text p {
+.conteiner-foot .card-text p, .conteiner-content-right p, .conteiner-content .content-text p {
   font-size: 15px;
   color: hsl(236deg, 13%, 42%);
   font-weight: 400;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
   display: grid;
-  grid-template-rows: repeat(100px 50px 100px 20px);
-  margin: 100px;
   background-color: hsl(233deg, 8%, 79%);
+  padding: 100px;
 }
 
 .conteiner-app {
@@ -22,7 +21,7 @@ body {
 
 .header-top {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding: 10px;
 }
 .header-top .header-lista-item {
@@ -47,7 +46,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
 }
 .conteiner-content img {
-  max-width: 100%;
+  max-width: 451px;
   min-width: 451px;
 }
 .conteiner-content .content-text {
@@ -81,8 +80,8 @@ body {
   background-color: hsl(240deg, 100%, 5%);
   min-width: 350px;
   padding: 5px;
-  max-width: 400px;
   margin-top: 23px;
+  flex-wrap: wrap;
 }
 .conteiner-content-right h1 {
   color: hsl(35deg, 77%, 62%);
@@ -92,6 +91,30 @@ body {
   text-align: center;
   color: hsl(36deg, 100%, 99%);
   font-size: 20px;
+}
+
+.conteiner-foot {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.conteiner-foot .card-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.conteiner-foot .card-text h2 {
+  font-size: 15px;
+  color: hsl(240deg, 100%, 5%);
+}
+.conteiner-foot .card-text h1 {
+  font-size: 20px;
+  color: hsl(233deg, 8%, 79%);
+}
+
+.img-card {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
