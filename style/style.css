@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
-.section p, .main p {
+.footer p, .section p, .main p {
   font-size: 15px;
   color: hsl(236deg, 13%, 42%);
   margin: 0 15px 10px 15px;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  background-color: hsl(233deg, 8%, 79%);
 }
 
 * {
@@ -17,33 +16,35 @@ body {
 .conteiner-app {
   display: grid;
   grid-template-areas: "header header header" "main main section" "footer footer footer";
+  margin: 50px;
+  background-color: hsl(36deg, 100%, 99%);
+  box-shadow: 50px 50px 50px 50px hsl(233deg, 8%, 79%);
 }
 @media only screen and (max-width: 700px) {
   .conteiner-app {
     grid-template-areas: "header" "main" "section" "footer";
   }
 }
-.conteiner-app .header {
+
+.header {
   grid-area: header;
   display: flex;
   justify-content: space-between;
 }
-.conteiner-app .header .header-list {
+.header .header-list {
   display: flex;
 }
-.conteiner-app .header .header-list li {
+.header li {
   list-style: none;
   color: hsl(236deg, 13%, 42%);
   margin: 10px;
 }
-@media only screen and (max-width: 700px) {
-  .conteiner-app .header li {
-    display: none;
-  }
-  .conteiner-app .header img {
-    margin: 15px 0 15px 10px;
-    width: 200%;
-  }
+.header .header li {
+  display: none;
+}
+.header .header img {
+  margin: 15px 0 15px 10px;
+  width: 200%;
 }
 
 .main {
@@ -102,7 +103,6 @@ body {
   }
 }
 .section {
-  border: 1px solid yellow;
   grid-area: section;
   background-color: hsl(240deg, 100%, 5%);
   margin: 0 20px 0 20px;
@@ -128,19 +128,36 @@ body {
     width: 80%;
   }
   .section h1 {
-    margin: 50px;
+    margin: 25px;
   }
   .section p {
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 .footer {
-  border: 1px solid blue;
   grid-area: footer;
   display: flex;
+  margin: 25px;
+}
+.footer img {
+  width: 25%;
 }
 .footer .card {
   display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.footer h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: hsl(233deg, 8%, 79%);
+}
+.footer h2 {
+  font-size: 15px;
+  color: hsl(240deg, 100%, 5%);
+}
+.footer p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,21 +18,25 @@ $assentPath: '../assents/image-web36-mobile.jpg'
     color: $Dark-gray-ishblue    
     
 body
-    margin: 0
-    padding: 0
+  
+    background-color: $grayshi-blue
+
 *
     font-family: 'Inter'
 
 .conteiner-app
     display: grid
     grid-template-areas: 'header header header''main main section''footer footer footer'
+    margin: 50px
+    background-color: $off-white
+    box-shadow: 50px 50px 50px 50px $grayshi-blue
     
     @media only screen and (max-width: 700px)
           grid-template-areas: 'header' 'main' 'section' 'footer'                            
-                                      
-    
+                                     
+
                 
-    .header
+.header
         
         grid-area: header
         display: flex
@@ -40,18 +44,18 @@ body
         .header-list
             display: flex
             
-            li
-                list-style: none
-                color: $Dark-gray-ishblue
-                margin: 10px
-    @media only screen and (max-width:700px)
-     .header
-           
         li
-            display: none
-        img
-            margin: 15px 0 15px 10px 
-            width: 200%    
+            list-style: none
+            color: $Dark-gray-ishblue
+            margin: 10px
+        @media only screen and (max-width:700px)
+        .header
+           
+            li
+                display: none
+            img
+                 margin: 15px 0 15px 10px 
+                 width: 200%    
             
     
 .main
@@ -105,7 +109,7 @@ body
     
 
 .section
-        border: 1px solid yellow 
+       
         grid-area: section
         background-color: $very-darkblue
         margin: 0 20px 0 20px
@@ -120,9 +124,7 @@ body
 
         h6
             border: 1px solid $Dark-gray-ishblue
-            margin: 0 15px 0 15px 
-
-
+            margin: 0 15px 0 15px   
 @media only screen and (max-width:700px)
     .section
          display: flex
@@ -130,19 +132,34 @@ body
          margin: 50px
          width: 80%
          h1
-            margin: 50px
+            margin: 25px
 
          p
-            font-size: 40px 
+            font-size: 25px 
 
 
 .footer
-        border: 1px solid blue 
+        
         grid-area: footer  
         display: flex
+        margin: 25px
+        img
+            width: 25%
+           
         .card
             display: flex
-           
+            flex-direction: column
+            margin-left: 20px
+        h1
+           font-size: 20px
+           margin-top: 15px
+           color: $grayshi-blue
+        h2
+            font-size: 15px 
+            color: $very-darkblue 
+        p
+            @extend %font-style-toPandli
+            margin: 0      
 
 
 
